@@ -2,14 +2,13 @@ import "../css/reglog.css";
 
 function RegForm() {
   return (
-    <div className="container">
-      <div className="card">
-        <div className="card-header">
-          <div className="my-logo"></div>
-          <h2>REGISTER ACCOUNT</h2>
-        </div>
-        <div className="card-body">
-          <div className="form-group">
+    <>
+      <div className="@container absolute top-[50%] left-[50%] w-100 xl:w-150 -translate-[50%]  flex justify-center content-center ">
+        <div className="rounded-3xl card w-[95dvw] md:w-full p-5">
+          <div className="my-logo justify-center"></div>
+          <h2 className="text-center">REGISTER ACCOUNT</h2>
+          <hr className="p-1 border-amber-50 bg-white" />
+          <div className="form-group flex gap-4">
             <input
               id="username"
               className="form-control"
@@ -48,18 +47,17 @@ function RegForm() {
               placeholder=" "
             />
             <label htmlFor="confirm-password">Confirm password</label>
+
+            <button className="submit bg-blue-500" name="submit" type="submit">
+              Confirm Register
+            </button>
+            <a className="flex justify-center" class="login">
+              Already have an account?
+            </a>
           </div>
         </div>
-        <button className="submit" name="submit" type="submit">
-          Confirm Register
-        </button>
-        <div>
-          <a target="_self" class="login mt-3" href="./login.html">
-            Already have an account?
-          </a>
-        </div>
       </div>
-    </div>
+    </>
   );
 }
 
