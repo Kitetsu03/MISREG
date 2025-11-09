@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 
 function LogForm() {
   return (
-    <div className="container absolute top-[50%] left-[50%] w-100 md:w-120 xl:w-150 -translate-[50%] flex justify-center content-center ">
-      <div className="card rounded-3xl w-[95dvw] md:w-full pt-5">
+    <div className="container absolute top-[50%] left-[50%] -translate-[50%] w-100 md:w-120 xl:w-150 flex justify-center content-center">
+      <div className="card rounded-2xl w-[95dvw] md:w-full pt-5">
         <div className="card-header">
           <div className="my-logo justify-center"></div>
-          <h2 className="cursor-default text-center pb-2 text-[min(5vw,30px)]">
+          <h2 className="cursor-default text-center pb-2 text-[min(5vw,20px)] md:text-[min(5vw,30px)]">
             LOGIN ACCOUNT
           </h2>
-          <hr className="p-1 border-amber-50 bg-white" />
+          <hr className="p-1 border-white bg-white" />
         </div>
-        <div className="card-body p-5 flex-row gap-4 text-[min(4vw,20px)]">
+        <div className="card-body p-5 flex-row gap-4 text-[min(5vw,15px)] md:text-[min(5vw,20px)]">
           <div className="form-group">
             <input
               id="email"

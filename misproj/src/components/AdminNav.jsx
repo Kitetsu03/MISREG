@@ -9,7 +9,7 @@ function AdminNav() {
   };
   return (
     <>
-      <nav className="sticky w-80 flex-row " ref={navRef}>
+      <nav className="sidebar w-80 flex-row " ref={navRef}>
         <h3>Logo</h3>
         <hr />
         <Link to="/AdminDashboard">Dashboard</Link>

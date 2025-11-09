@@ -13,7 +13,7 @@ function App() {
         <Route path="/register" element={<RegForm />}></Route>
         <Route path="/login" element={<LogForm />}></Route>
         <Route path="/admin" element={<AdminDashboard />}></Route>
-        <Route path="/member" element={<GatekeeperDashboard />}></Route>
+        <Route path="/gatekeeper" element={<GatekeeperDashboard />}></Route>
         <Route path="/member" element={<MemberPortal />}></Route>
       </Routes>
     </main>
