@@ -1,21 +1,22 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-function Navbar() {
+function GatekeeperNav() {
   const navRef = useRef();
   const showNavbar = () => {
     navRef.current.classlist.toggle("responsive_nav");
   };
   return (
     <>
-      <nav ref={navRef}>
+      <nav className="sticky w-80 flex-row " ref={navRef}>
         <h3>Logo</h3>
         <hr />
-        <a href="/#">Dashboard</a>
-        <a href="/#">Users & Access</a>
-        <a href="/#">Members Data</a>
-        <a href="/#">Reports & Analytics</a>
-        <a href="/#">System Settings</a>
+        <Link to="/AdminDashboard">Dashboard</Link>
+        <Link to="/UsersAccess">Users & Access</Link>
+        <Link to="/MembersData">Members Data</Link>
+        <Link to="/Reports">Reports & Analytics</Link>
+        <Link to="/Settings">System Settings</Link>
         <button className="nav-btn close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
@@ -28,4 +29,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default GatekeeperNav;

@@ -1,24 +1,18 @@
 import "../css/reglog.css";
+import { Link } from "react-router-dom";
 
 function LogForm() {
   return (
-    <div className="container">
-      <div className="card">
+    <div className="container absolute top-[50%] left-[50%] w-100 md:w-120 xl:w-150 -translate-[50%] flex justify-center content-center ">
+      <div className="card rounded-3xl w-[95dvw] md:w-full pt-5">
         <div className="card-header">
-          <div className="my-logo"></div>
-          <h2>REGISTER ACCOUNT</h2>
+          <div className="my-logo justify-center"></div>
+          <h2 className="cursor-default text-center pb-2 text-[min(5vw,30px)]">
+            LOGIN ACCOUNT
+          </h2>
+          <hr className="p-1 border-amber-50 bg-white" />
         </div>
-        <div className="card-body">
-          <div className="form-group">
-            <input
-              id="username"
-              className="form-control"
-              name="username"
-              type="text"
-              placeholder=" "
-            />
-            <label htmlFor="username">Username</label>
-          </div>
+        <div className="card-body p-5 flex-row gap-4 text-[min(4vw,20px)]">
           <div className="form-group">
             <input
               id="email"
@@ -26,6 +20,7 @@ function LogForm() {
               name="email"
               type="email"
               placeholder=" "
+              required
             />
             <label htmlFor="email">Email address</label>
           </div>
@@ -36,27 +31,26 @@ function LogForm() {
               name="password"
               type="password"
               placeholder=" "
+              required
             />
             <label htmlFor="password">Password</label>
           </div>
-          <div className="form-group">
-            <input
-              id="confirm-password"
-              className="form-control"
-              name="confirm-password"
-              type="password"
-              placeholder=" "
-            />
-            <label htmlFor="confirm-password">Confirm password</label>
+          <div className="card-footer flex-col justify-center items-center">
+            <Link to="/admin">
+              <button
+                className="submit cursor-pointer bg-blue-500 text-white p-1 mt-2"
+                name="submit"
+                type="submit"
+              >
+                Login Account
+              </button>
+            </Link>
+            <Link to="/register">
+              <a className="cursor-pointer login flex justify-center items-center mt-4 hover:text-cyan-800 opacity-70">
+                Create an account?
+              </a>
+            </Link>
           </div>
-        </div>
-        <button className="submit" name="submit" type="submit">
-          Confirm Register
-        </button>
-        <div>
-          <a target="_self" class="login mt-3" href="./login.html">
-            Already have an account?
-          </a>
         </div>
       </div>
     </div>

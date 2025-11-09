@@ -16,7 +16,6 @@
 body {
   font-family: var(--primary-font);
   background: var(--gradient-color--) fixed;
-  font-size: 18px;
 }
 /* Login and Register */
 
