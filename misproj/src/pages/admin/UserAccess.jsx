@@ -8,7 +8,7 @@ function UserAccess() {
         <header>
             <h1>USER & ACCESS MANAGEMENT</h1> 
             <p>Manage user accoutes, roles, and permissions for your  church management system.</p>
-            <button class="bg-black hover:bg-blue-500 text-white font-bold py-0.3 px-2 rounded-full"><p>+Add User</p></button>
+            <button class="bg-black hover:bg-blue-500 text-white font-bold py-0.3 px-2 rounded-full"><p class="mr-px">+Add User</p></button>
             <div className="grid grid-cols-2 grid-rows-6 gap-4">
                 <div className="col-span-2">1</div>
                 <div className="col-span-2 row-span-2 row-start-2">2</div>
