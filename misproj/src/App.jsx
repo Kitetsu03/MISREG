@@ -5,6 +5,7 @@ import LogForm from "./pages/LogForm";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import MemberPortal from "./pages/member/MembersPortal";
 import GatekeeperDashboard from "./pages/gatekeeper/GatekeeperDashboard";
+import UserAccess from "./pages/admin/UserAccess";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/register" element={<RegForm />}></Route>
         <Route path="/login" element={<LogForm />}></Route>
         <Route path="/admin" element={<AdminDashboard />}></Route>
+        <Route path="/useraccess" element={<UserAccess />}></Route>
         <Route path="/gatekeeper" element={<GatekeeperDashboard />}></Route>
         <Route path="/member" element={<MemberPortal />}></Route>
       </Routes>
